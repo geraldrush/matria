@@ -1,0 +1,271 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+---
+
+<MainLayout title="Our Services | Matria Plumbing & Electrical" description="Expert plumbing and electrical services in Pretoria and Johannesburg. Emergency repairs, installations, maintenance, and more.">
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive plumbing and electrical solutions for residential and commercial clients</p>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Plumbing Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>💧 Emergency Plumbing Repairs</h3>
+                    <p>24/7 response to burst pipes, leaks, blockages, and other urgent plumbing issues. We're here when you need us most.</p>
+                    <ul>
+                        <li>Burst pipe repair and replacement</li>
+                        <li>Leak detection and repair</li>
+                        <li>Blockage clearing and drain cleaning</li>
+                        <li>Toilet and tap repairs</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>🔧 Plumbing Installation</h3>
+                    <p>Professional installation of new plumbing systems for renovations, new construction, or system upgrades.</p>
+                    <ul>
+                        <li>New bathroom installations</li>
+                        <li>Kitchen plumbing setup</li>
+                        <li>Hot water system installation</li>
+                        <li>Garden and outdoor plumbing</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>🧹 Drain Cleaning & Maintenance</h3>
+                    <p>Regular maintenance to prevent future problems and keep your plumbing system running smoothly.</p>
+                    <ul>
+                        <li>Professional drain cleaning</li>
+                        <li>Pipe inspection and assessment</li>
+                        <li>Preventative maintenance plans</li>
+                        <li>Water pressure testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Electrical Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>⚡ Electrical Repairs & Maintenance</h3>
+                    <p>Expert diagnosis and repair of electrical problems in homes and businesses. Safe and reliable solutions.</p>
+                    <ul>
+                        <li>Fault finding and repair</li>
+                        <li>Rewiring and circuit upgrades</li>
+                        <li>Switchboard and panel repairs</li>
+                        <li>Safety inspections</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>💡 Electrical Installation</h3>
+                    <p>Complete electrical installation services for new builds, renovations, and system upgrades.</p>
+                    <ul>
+                        <li>Full building electrical work</li>
+                        <li>Lighting and fixture installation</li>
+                        <li>Power outlet installation and upgrade</li>
+                        <li>Solar and renewable energy setup</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>🔌 Safety & Compliance</h3>
+                    <p>Ensure your electrical systems meet South African safety standards and regulations.</p>
+                    <ul>
+                        <li>SABS compliance checks</li>
+                        <li>Electrical safety audits</li>
+                        <li>Arc testing and maintenance</li>
+                        <li>Certification and documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Service Guarantees</h2>
+            <div class="guarantees-grid">
+                <div class="guarantee-card">
+                    <h3>✓ Quality Guarantee</h3>
+                    <p>All work completed to the highest standards with 12 months workmanship guarantee.</p>
+                </div>
+                <div class="guarantee-card">
+                    <h3>✓ Transparent Pricing</h3>
+                    <p>Fixed quotes with no hidden charges. You know exactly what you'll pay before we start.</p>
+                </div>
+                <div class="guarantee-card">
+                    <h3>✓ Emergency Response</h3>
+                    <p>Available 24/7. Most emergencies can be attended to same day or next morning.</p>
+                </div>
+                <div class="guarantee-card">
+                    <h3>✓ Professional Team</h3>
+                    <p>Licensed, insured, and experienced plumbers and electricians you can trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us for a free quote or emergency service</p>
+            <div class="cta-buttons">
+                <a href="/contact/" class="btn btn-primary btn-large">Request Service</a>
+                <a href="tel:+27737616835" class="btn btn-secondary btn-large">Call: +27 73 761 6835</a>
+            </div>
+        </div>
+    </section>
+</MainLayout>
+
+<style>
+    .page-hero {
+        background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .page-hero h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .page-hero p {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .services-section {
+        padding: 80px 20px;
+    }
+
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        margin-top: 3rem;
+    }
+
+    .service-item {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+    }
+
+    .service-item h3 {
+        color: var(--primary-green);
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .service-item p {
+        color: #666;
+        margin-bottom: 1.5rem;
+    }
+
+    .service-item ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .service-item li {
+        padding-left: 25px;
+        margin-bottom: 0.8rem;
+        color: #555;
+        position: relative;
+    }
+
+    .service-item li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--primary-green);
+        font-weight: bold;
+    }
+
+    .bg-light {
+        background-color: var(--bg-light);
+    }
+
+    .pricing-section {
+        padding: 80px 20px;
+    }
+
+    .guarantees-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 3rem;
+    }
+
+    .guarantee-card {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        text-align: center;
+        border-left: 4px solid var(--primary-green);
+    }
+
+    .guarantee-card h3 {
+        color: var(--primary-green);
+        margin-bottom: 1rem;
+    }
+
+    .cta-section {
+        background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+        color: white;
+        padding: 60px 20px;
+    }
+
+    .cta-content {
+        text-align: center;
+    }
+
+    .cta-content h2 {
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .cta-content p {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .mb-4 {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .page-hero h1 {
+            font-size: 2rem;
+        }
+
+        .services-list {
+            grid-template-columns: 1fr;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+        }
+    }
+</style>

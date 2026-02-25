@@ -1,0 +1,163 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+---
+
+<MainLayout title="Blog | Matria Plumbing & Electrical Tips & Advice" description="Expert plumbing and electrical tips, maintenance guides, and industry news. Read our blog for helpful advice on keeping your systems running smoothly.">
+    <section class="page-hero">
+        <div class="container">
+            <h1>Blog & Resources</h1>
+            <p>Expert tips, maintenance guides, and industry insights</p>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Latest Articles</h2>
+            <p class="text-center section-subtitle">Learn from our experts about plumbing and electrical maintenance</p>
+            
+            <div class="blog-grid">
+                <BlogCard 
+                    title="How to Handle a Burst Pipe Emergency"
+                    excerpt="Burst pipes can cause significant damage. Learn the immediate steps to take and when to call for professional help."
+                    date="2026-02-20"
+                    image="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&h=400&fit=crop"
+                    slug="burst-pipe-emergency"
+                    category="Plumbing"
+                />
+                <BlogCard 
+                    title="Electrical Safety Tips for Your Home"
+                    excerpt="Keep your home safe with these essential electrical safety practices every homeowner should know."
+                    date="2026-02-18"
+                    image="https://images.unsplash.com/photo-1621905167918-48416bd8575a?w=500&h=400&fit=crop"
+                    slug="electrical-safety-tips"
+                    category="Electrical"
+                />
+                <BlogCard 
+                    title="Signs Your Plumbing System Needs Maintenance"
+                    excerpt="Don't wait for an emergency. Recognize these warning signs that your plumbing system needs professional attention."
+                    date="2026-02-15"
+                    image="https://images.unsplash.com/photo-1596905030625-6f6de0e0fda9?w=500&h=400&fit=crop"
+                    slug="plumbing-maintenance-signs"
+                    category="Maintenance"
+                />
+                <BlogCard 
+                    title="Energy-Efficient Electrical Solutions for Your Home"
+                    excerpt="Save money on electricity bills with these energy-efficient electrical upgrades and practices."
+                    date="2026-02-12"
+                    image="https://images.unsplash.com/photo-1534377295332-f90ae5d79b96?w=500&h=400&fit=crop"
+                    slug="energy-efficient-electrical"
+                    category="Electrical"
+                />
+                <BlogCard 
+                    title="Common Plumbing Problems and Solutions"
+                    excerpt="From leaky taps to slow drains, understand common plumbing issues and how Matria can help."
+                    date="2026-02-10"
+                    image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&h=400&fit=crop"
+                    slug="common-plumbing-problems"
+                    category="Plumbing"
+                />
+                <BlogCard 
+                    title="Water Heater Maintenance Guide"
+                    excerpt="Extend the life of your water heater with regular maintenance. Here's what you need to know."
+                    date="2026-02-08"
+                    image="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=500&h=400&fit=crop"
+                    slug="water-heater-maintenance"
+                    category="Maintenance"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Need Professional Help?</h2>
+            <p>Contact us for expert plumbing and electrical services in Pretoria and Johannesburg</p>
+            <div class="cta-buttons">
+                <a href="/contact/" class="btn btn-primary btn-large">Get in Touch</a>
+                <a href="tel:+27737616835" class="btn btn-secondary btn-large">Call: +27 73 761 6835</a>
+            </div>
+        </div>
+    </section>
+</MainLayout>
+
+<style>
+    .page-hero {
+        background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .page-hero h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .page-hero p {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .blog-section {
+        padding: 80px 20px;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: #999;
+        margin-bottom: 3rem;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+
+    .cta-section {
+        background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+        color: white;
+        padding: 60px 20px;
+    }
+
+    .cta-content {
+        text-align: center;
+    }
+
+    .cta-content h2 {
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .cta-content p {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .mb-4 {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .page-hero h1 {
+            font-size: 2rem;
+        }
+
+        .blog-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+        }
+    }
+</style>

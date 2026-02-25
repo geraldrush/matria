@@ -1,0 +1,342 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Contact Matria | Emergency Plumbing & Electrical" description="Contact Matria Plumbing & Electrical Services for emergency repairs, quotes, and service requests in Pretoria and Johannesburg. Call +27 73 761 6835.">
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for emergency service or to request a quote</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Quick Contact Info</h2>
+                    
+                    <div class="info-card">
+                        <h3>📞 Phone</h3>
+                        <p><strong>24/7 Emergency Service:</strong></p>
+                        <a href="tel:+27737616835" class="contact-link">+27 73 761 6835</a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>✉️ Email</h3>
+                        <p><strong>For inquiries and quotes:</strong></p>
+                        <a href="mailto:plumber@matria.co.za" class="contact-link">plumber@matria.co.za</a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📍 Service Areas</h3>
+                        <p><strong>Primary Service Areas:</strong></p>
+                        <ul class="service-areas-list">
+                            <li>Pretoria and surrounding areas</li>
+                            <li>Johannesburg and surrounding areas</li>
+                            <li>Other areas by arrangement</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>⏰ Response Times</h3>
+                        <p><strong>Available 24/7</strong></p>
+                        <ul class="service-areas-list">
+                            <li>Emergency: Same day or next morning</li>
+                            <li>Routine service: Within 48 hours</li>
+                            <li>Scheduled appointments: As agreed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" method="POST" action="https://formspree.io/f/xyzpqrst" name="contact">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+27 ..." />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="area">Service Area *</label>
+                            <select id="area" name="area" required>
+                                <option value="">Select area...</option>
+                                <option value="pretoria">Pretoria</option>
+                                <option value="johannesburg">Johannesburg</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select service...</option>
+                                <option value="emergency">Emergency Repair</option>
+                                <option value="plumbing">Plumbing Service</option>
+                                <option value="electrical">Electrical Service</option>
+                                <option value="installation">Installation</option>
+                                <option value="maintenance">Maintenance</option>
+                                <option value="quote">Quote Request</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us about your plumbing or electrical needs..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        <p class="form-note">We'll respond within 2 hours during business hours or first thing next morning.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do you offer 24/7 emergency service?</h3>
+                    <p>Yes! We're available 24/7 for emergency plumbing and electrical repairs. Call us anytime at +27 73 761 6835.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How quickly can you respond to emergencies?</h3>
+                    <p>Most emergencies are attended to same day. If you call after hours, we'll respond first thing next morning unless it's a critical emergency.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you service both Pretoria and Johannesburg?</h3>
+                    <p>Yes, we serve both Pretoria and Johannesburg with comprehensive plumbing and electrical services for residential and commercial clients.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are you fully licensed and insured?</h3>
+                    <p>Absolutely. All our plumbers and electricians are SABS-compliant, fully licensed, and insured for your protection.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's your pricing structure?</h3>
+                    <p>We provide transparent, upfront quotes with no hidden charges. Call for an estimate or submit the form and we'll provide detailed pricing.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide guarantees on work?</h3>
+                    <p>Yes! All our workmanship is guaranteed for 12 months. We stand behind our work 100%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Need Help Right Now?</h2>
+            <p>Call us immediately for emergency plumbing and electrical services</p>
+            <a href="tel:+27737616835" class="btn btn-primary btn-large">Call: +27 73 761 6835</a>
+        </div>
+    </section>
+</MainLayout>
+
+<style>
+    .page-hero {
+        background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .page-hero h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .page-hero p {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .contact-section {
+        padding: 80px 20px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .contact-info h2 {
+        margin-bottom: 2rem;
+    }
+
+    .info-card {
+        background: var(--bg-light);
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        border-left: 4px solid var(--primary-green);
+    }
+
+    .info-card h3 {
+        color: var(--primary-green);
+        margin-bottom: 0.8rem;
+    }
+
+    .info-card p {
+        color: #666;
+        margin-bottom: 0.8rem;
+    }
+
+    .contact-link {
+        color: var(--primary-green);
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .service-areas-list,
+    .service-areas-list li {
+        list-style: none;
+        padding: 0;
+    }
+
+    .service-areas-list li {
+        color: #666;
+        padding-left: 20px;
+        margin-bottom: 0.5rem;
+        position: relative;
+    }
+
+    .service-areas-list li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--primary-green);
+        font-weight: bold;
+    }
+
+    .contact-form-wrapper h2 {
+        margin-bottom: 2rem;
+    }
+
+    .contact-form {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
+        font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-size: 1rem;
+        font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        outline: none;
+        border-color: var(--primary-green);
+        box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.1);
+    }
+
+    .form-note {
+        font-size: 0.9rem;
+        color: #999;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .faq-section {
+        padding: 80px 20px;
+        background-color: var(--bg-light);
+    }
+
+    .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 3rem;
+    }
+
+    .faq-item {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+    }
+
+    .faq-item h3 {
+        color: var(--primary-green);
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+    }
+
+    .faq-item p {
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .cta-section {
+        background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+        color: white;
+        padding: 60px 20px;
+    }
+
+    .cta-content {
+        text-align: center;
+    }
+
+    .cta-content h2 {
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .cta-content p {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .page-hero h1 {
+            font-size: 2rem;
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .faq-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

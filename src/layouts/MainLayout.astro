@@ -1,0 +1,72 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/globals.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { title, description = 'Matria Plumbing & Electrical Services - Premium plumbing and electrical services in Pretoria and Johannesburg', ogImage } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="plumbing, electrical, services, Pretoria, Johannesburg, South Africa, emergency repairs" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage || 'https://images.unsplash.com/photo-1581464492846-61b1ef2ff297?w=1200&h=630&fit=crop'} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- Canonical -->
+    <link rel="canonical" href={Astro.url.href} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Matria Plumbing & Electrical Services",
+      "image": "https://images.unsplash.com/photo-1581464492846-61b1ef2ff297?w=500&h=300&fit=crop",
+      "description": "Premium plumbing and electrical services serving Pretoria and Johannesburg, South Africa",
+      "telephone": "+27737616835",
+      "email": "plumber@matria.co.za",
+      "url": "https://matria.co.za",
+      "areaServed": ["Pretoria", "Johannesburg"],
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Johannesburg",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      }
+    }
+    </script>
+    
+    <title>{title}</title>
+</head>
+<body>
+    <Header />
+    <main>
+        <slot />
+    </main>
+    <Footer />
+</body>
+</html>
