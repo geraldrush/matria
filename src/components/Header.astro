@@ -7,7 +7,7 @@ import Icon from './Icon.astro';
         <div class="container navbar-container">
             <div class="logo">
                 <a href="/">
-                    <Icon name="wrench" size={28} />
+                    <img src="/logo.png" alt="Matria" width="50" height="50" />
                     <span class="logo-text">Matria</span>
                 </a>
             </div>
@@ -57,6 +57,11 @@ import Icon from './Icon.astro';
         gap: 10px;
         color: var(--primary-green);
         text-decoration: none;
+    }
+
+    .logo img {
+        background: transparent;
+        object-fit: contain;
     }
 
 
