@@ -111,13 +111,15 @@ a:hover {
 }
 
 .btn-secondary {
-  background-color: var(--accent-light);
-  color: var(--accent-dark);
+  background-color: white;
+  color: var(--primary-green);
+  border: 2px solid white;
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-green-lightest);
+  background-color: rgba(255, 255, 255, 0.9);
   transform: translateY(-2px);
+  color: var(--primary-green);
 }
 
 .btn-outline {
